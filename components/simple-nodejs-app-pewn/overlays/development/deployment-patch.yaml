@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-pewn
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-qckp-tenant/nodejs-users/simple-nodejs-app-pewn@sha256:a0b43e4cdd6c5e9924c9289deae9869edd2d5500d670daff48f4a61a9063cc20
+        name: my-nodejs
+        resources: {}
+status: {}
